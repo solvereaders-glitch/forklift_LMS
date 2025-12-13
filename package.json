@@ -1,6 +1,7 @@
 {
-  "name": "forklift.lms",
+  "name": "forklift-lms",
   "version": "0.1.0",
+  "description": "Online forklift theory training LMS platform",
   "private": true,
   "scripts": {
     "dev": "next dev",
