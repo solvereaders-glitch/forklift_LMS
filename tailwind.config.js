@@ -1,14 +1,26 @@
-/** @type {import('tailwindcss').Config} */
+﻿/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx}',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        // Add your custom colors here if needed
+        brand: {
+          red: '#DC2626',
+          redDark: '#B91C1C',
+        },
+        surface: {
+          DEFAULT: '#FFFFFF',
+          subtle: '#F9FAFB',
+        },
+        text: {
+          primary: '#111827',
+          secondary: '#374151',
+          muted: '#6B7280',
+        },
+        border: '#E5E7EB',
       },
     },
   },

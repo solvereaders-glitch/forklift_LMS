@@ -1,28 +1,34 @@
+﻿import './globals.css';
+
 export default function Home() {
   return (
-    <div>
-      <nav className="w-full p-4 flex justify-between items-center bg-white shadow">
-        <h1 className="font-bold text-xl text-black">Forklift LMS</h1>
-        <a href="/login" className="text-red-600 font-semibold">Login</a>
+    <div className="min-h-screen bg-gray-50">
+      <nav className="w-full p-4 bg-white shadow-sm">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 className="text-xl font-bold text-black">Forklift LMS</h1>
+          <a href="/login" className="text-red-600 hover:text-red-700 font-semibold">
+            Login
+          </a>
+        </div>
       </nav>
 
-      <section className="p-10 text-center bg-gradient-to-r from-red-100 to-pink-100">
-        <h2 className="text-4xl font-bold mb-4 text-gray-900">
-          Online Forklift Theory Training
-        </h2>
-
-        <p className="text-lg text-gray-800 max-w-xl mx-auto">
-          Complete forklift theory 100% online. Automatic progress saving.
-          Certificates generated instantly after passing exams.
-        </p>
-
-        <a
-          href="/login"
-          className="mt-6 inline-block px-6 py-3 bg-red-600 text-white rounded-lg font-semibold"
-        >
-          Login to Start
-        </a>
-      </section>
+      <main className="max-w-7xl mx-auto p-6">
+        <section className="bg-white p-8 rounded-lg shadow-sm">
+          <h2 className="text-3xl font-bold mb-4 text-black">
+            Online Forklift Theory Training
+          </h2>
+          <p className="text-lg mb-8 text-black">
+            Complete forklift theory 100% online. Automatic progress saving.
+            Certificates generated instantly after passing exams.
+          </p>
+          <a
+            href="/login"
+            className="inline-block px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700"
+          >
+            Login to Start
+          </a>
+        </section>
+      </main>
     </div>
   );
 }
